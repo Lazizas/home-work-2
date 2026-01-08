@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    padding: 12px 28px;
+    border: 1px solid black;
+    transition: 0.3s;
+    text-transform: uppercase;
+
+}
+
+.nav_burger {
+    display: none;
+}
+
+.insur {
+    background-color: rgba(45, 38, 65, 1);
+    height: 600px;
+}
+
+.insur_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.insur_info {
+    width: 540px;
+    height: 340px;
+    color: white;
+}
+
+.insure_image {
+    margin-top: 85px;
+    max-width: 90%;
+}
+
+.insur_info hr {
+    width: 105px;
+    margin-bottom: 63px;
+}
+
+.insur_info h1 {
+    font-size: 72px;
+}
+
+.insur_info p {
+    padding: 20px 0;
+}
+
+.insur_info a {
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+
+}
+
+.insur_info a:hover {
+    padding: 12px 28px;
+    border: 1px solid white;
+    transition: 0.3s;
+
+}
+
+.conditions {
+
+
+    margin-top: 250px;
+}
+
+.con_wrapper {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    justify-content: space-between;
+}
+
+.conditions hr {
+    width: 150px;
+    height: 1px;
+}
+
+.conditions h1 {
+    margin-top: 63px;
+    font-family: "DM Serif Display", serif;
+    font-size: 72px;
+}
+
+.con_child_info h2 {
+    padding: 15px 0;
+}
+
+.con_child_info p {
+    color: gray;
+    font-family: "DM Serif Display", serif;
+}
+
+.informations {
+    height: 250px;
+    background-color: rgba(45, 38, 65, 1);
+    color: white;
+    margin: 100px 0;
+}
+
+.infos_wrapper {
+    padding: 69px 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infos_wrapper h1 {
+    font-size: 52px;
+}
+
+.infos_wrapper a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid white;
+}
+
+footer hr {
+    width: 1220px;
+    margin: 100px 0;
+    min-width: 360px;
+}
+
+.footer_upper_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_child p {
+    padding: 3px 0;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .insur {
+        background-color: rgba(45, 38, 65, 1);
+        height: 1200px;
+    }
+
+
+
+    .insur_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .insur_info {
+        width: 540px;
+        height: 340px;
+        color: white;
+    }
+
+    .insur_info hr {
+        display: none;
+    }
+
+    .insur_info h1 {
+        margin-top: 33px;
+    }
+
+    .con_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+
+    }
+
+    .footer_upper_wrapper img {
+        width: 100px;
+    }
+
+    footer hr {
+        width: 768px;
+        margin: 100px 0;
+        min-width: 360px;
+    }
+
+    .infos_wrapper {
+        padding: 49px 51px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .infos_wrapper h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width:360px) {
+    .nav_burger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .insur {
+        background-color: rgba(45, 38, 65, 1);
+        height: 700px;
+    }
+
+    .insur_info h1 {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .insur_info a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .insur_info p {
+        padding: 20px 0;
+        font-size: 10.1px;
+        text-align: center;
+    }
+    .conditions h1 {
+        font-size: 29.1px; 
+        text-align: center;
+    }
+    .infos_wrapper {
+        padding: 100px 0;
+    }
+    .infos_wrapper h1 {
+        font-size: 21px;
+    }
+       footer hr {
+        width: 360px;
+        margin: 100px 0;
+        min-width: 360px;
+    }
+}
